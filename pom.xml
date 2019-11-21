@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ee.pmill</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>prayermill</name>
 	<description>Internet Prayer Mill Project</description>

@@ -1,5 +1,6 @@
 package ee.pmill.mill;
 
+import ee.pmill.api.SSEController;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +60,7 @@ public class Mill {
         private int rollPosition;
 
         PrayerRoll() {
-            contents = new LinkedList<String>();
+            contents = new LinkedList<>();
         }
 
         LinkedList<String> getContents() {
@@ -90,6 +91,9 @@ public class Mill {
 
     @Autowired
     private Sky sky;
+
+    @Autowired
+    private SSEController controller;
 
     public Mill() {
         roll = new PrayerRoll();
