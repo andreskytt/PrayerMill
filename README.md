@@ -11,8 +11,10 @@ And the spinning was limited to how fast a person could turn the mill or how man
 to the large mills in sacred places. 
 
 Today we can do better.
-
-So this is a web service where people can
- * Add their thoughts and prayers to the roll inside the mill
- * Add speed to the mill so it spins and prayers stream forth
- * see the the prayers as they emerge
+ 
+ # What does it do
+  * `/add?prayer={prayer}` adds a prayer to the roll
+  * `/roll` returns all the prayers that have been sent towards the sky
+  * `/stream` is a SSE stream of all prayers as they come along
+  * `/spin` spins the prayer wheel so the prayers keep on going
+  
